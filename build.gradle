@@ -23,8 +23,10 @@ allprojects {
     }
 }
 
-ndk {
-  abiFilters "x86", "armeabi-v7a", "armeabi"
+defaultConfig {
+    ndk {
+      abiFilters "armeabi-v7a"
+    }
 }
 
 ext {

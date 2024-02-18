@@ -52,9 +52,6 @@ private:
             game_data_dir = new char[strlen(app_data_dir) + 1];
             strcpy(game_data_dir, app_data_dir);
 
-#if defined(__i386__)
-            auto path = "zygisk/armeabi-v7a.so";
-#endif
 #if defined(__x86_64__)
             auto path = "zygisk/arm64-v8a.so";
 #endif

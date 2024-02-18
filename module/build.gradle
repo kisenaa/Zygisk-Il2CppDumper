@@ -17,6 +17,9 @@ android {
                 arguments "-DMODULE_NAME:STRING=$moduleLibraryName"
             }
         }
+        ndk {
+        abiFilters 'armeabi-v7a', 'arm64-v8a'
+        }
     }
     buildFeatures {
         prefab true

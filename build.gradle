@@ -23,12 +23,6 @@ allprojects {
     }
 }
 
-defaultConfig {
-    ndk {
-      abiFilters "armeabi-v7a"
-    }
-}
-
 ext {
     minSdkVersion = 23
     targetSdkVersion = 32
